@@ -7,7 +7,7 @@
 		"prepare": "husky install",
 		"dev": "vite",
 		"dev-vite": "vite",
-		"build": "vite build && msw init build/ --force",
+		"build": "vite build && msw init dist/ --force",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"lint-staged": "lint-staged",
