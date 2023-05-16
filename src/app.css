@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sb-show-main.sb-main-padded {
+	padding: 0;
+}
+
+.customScrollbar::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+.customScrollbar::-webkit-scrollbar-track {
+	background: #e8e8e8;
+	border-radius: 5px;
+}
+.customScrollbar::-webkit-scrollbar-thumb {
+	background-color: #c6c6c6;
+	border-radius: 14px;
+	border: 1px solid #e8e8e8;
+}
+
+html,
+body,
+#app {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transition: 0.5s;
+}
+
+html.dark #app {
+	background: #333;
+}
+html.dark {
+	background: #333;
+}
+
+html.dark body {
+	width: 100%;
+	height: 100%;
+	background: #333;
+	transition: 0.5s;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+	display: none;
+}
+
+@keyframes move {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 400px;
+	}
+	100% {
+		left: 0;
+	}
+}
+.animate-move {
+	animation: move 1s ease-in-out infinite -2s;
+}
+
+.text-rtl {
+	direction: rtl;
+}
