@@ -27,7 +27,7 @@
 	worker
 		.start({
 			serviceWorker: {
-				url: './mockServiceWorker.ts',
+				url: '/src/mockServiceWorker.ts',
 			},
 		})
 		.catch((error) => console.error(error));
