@@ -24,12 +24,12 @@
 	};
 
 	// if (process.env.NODE_ENV === 'development') {
-	// worker.start().catch((error) => console.error(error));
-	worker.start({
-		serviceWorker: {
-			url: '/worker.ts',
-		},
-	});
+	worker.start().catch((error) => console.error(error));
+	// worker.start({
+	// 	serviceWorker: {
+	// 		url: '/worker.ts',
+	// 	},
+	// });
 	// 	.catch((error) => console.error(error));
 	// }
 </script>
