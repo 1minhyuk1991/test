@@ -24,7 +24,7 @@
 	};
 
 	// if (process.env.NODE_ENV === 'development') {
-	worker.start().catch((error) => console.error(error));
+	// worker.start().catch((error) => console.error(error));
 	worker
 		.start({
 			serviceWorker: {
