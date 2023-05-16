@@ -24,13 +24,7 @@
 	};
 
 	// if (process.env.NODE_ENV === 'development') {
-	worker
-		.start({
-			serviceWorker: {
-				url: '/dist/mockServiceWorker.js',
-			},
-		})
-		.catch((error) => console.error(error));
+	worker.start().catch((error) => console.error(error));
 	// }
 </script>
 
