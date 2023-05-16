@@ -1,8 +1,8 @@
 import { rest } from 'msw';
 // import type { BasicHostDataType } from '../commonTypes';
 // import uuid from '../lib/uuid';
-import randomNumber from '../lib/randomNumber';
-import { mockHosts } from '../components/liquidGauges/liquidGaugesViewStroe';
+import randomNumber from './lib/randomNumber';
+import { mockHosts } from './components/liquidGauges/liquidGaugesViewStroe';
 import { get } from 'svelte/store';
 
 // for (let i = 0; i < 10; i++) {
