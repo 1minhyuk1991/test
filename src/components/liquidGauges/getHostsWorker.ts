@@ -6,8 +6,8 @@ onmessage = function (event: MessageEvent) {
 	const callMsw = () => {
 		fetch(
 			isUpdating
-				? 'https://teemstone-lab.github.io/yunji/hosts/data'
-				: 'https://teemstone-lab.github.io/yunji/hosts',
+				? '/hosts/data'
+				: '/hosts',
 			{
 				headers: {
 					'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ onmessage = function (event: MessageEvent) {
 		callMsw();
 
 		setTimeout(() => {
-			fetch('https://teemstone-lab.github.io/yunji/hosts/data', {
+			fetch('/hosts/data', {
 				headers: {
 					'Content-Type': 'application/json',
 				},
