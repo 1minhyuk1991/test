@@ -27,7 +27,7 @@
 	worker
 		.start({
 			serviceWorker: {
-				url: '/mockServiceWorker.js',
+				url: '/dist/mockServiceWorker.js',
 			},
 		})
 		.catch((error) => console.error(error));
