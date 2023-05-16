@@ -9,7 +9,7 @@
 	import TodoList from './pages/todoList.svelte';
 	import FruitShop from './pages/fruitsShop.svelte';
 	import liquidGaugesView from './pages/liquidGaugesView.svelte';
-	import { worker } from './mocks/worker';
+	import { worker } from './worker';
 
 	const routes = {
 		'/': Index,
@@ -25,12 +25,11 @@
 
 	// if (process.env.NODE_ENV === 'development') {
 	// worker.start().catch((error) => console.error(error));
-	worker
-		.start({
-			serviceWorker: {
-				url: '/mocks/worker.ts',
-			},
-		})
+	worker.start({
+		serviceWorker: {
+			url: '/worker.ts',
+		},
+	});
 	// 	.catch((error) => console.error(error));
 	// }
 </script>
